@@ -1,0 +1,116 @@
+body {
+    perspective: 700px ;
+    background-color: rgb(194, 194, 194);
+}
+.h{
+     margin-left: 500px;
+     margin-top: 80px;
+     font-size: 80px;
+     color: rgb(119, 119, 119);
+     text-shadow: 2px 2px 2px white;
+     text-decoration: underline;
+}
+.sec1{
+    margin-top: 80px;
+    margin-left: 40px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+    border-width: 20px;
+}
+.front1{
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(Images/1.jpg);
+    background-size: 400px 300px;
+}
+.back1{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.front1, .back1{
+    position: absolute;
+}
+.sec1:hover {
+    transform: rotateY(180deg); 
+}
+.h1{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.p1{
+    margin-left: -70px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+.h2{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.p2{
+    margin-left: -70px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+.h3{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 40px;
+}
+.p3{
+    margin-left: -70px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+.sec2{
+    margin-top: -300px;
+    margin-left: 470px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+}
+.front2{
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(Images/2.jpg);
+    background-size: 400px 300px;
+}
+.back2{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.front2, .back2{
+    position: absolute;
+}
+.sec2:hover {
+    transform: rotateY(180deg); 
+}
+.sec3{
+    margin-top: -300px;
+    margin-left: 900px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+}
+.front3{
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(Images/3.jpg);
+    background-size: 400px 300px;
+}
+.back3{
+    background-color: white;
+    transform: rotateY(180deg);
+}
+.front3, .back3{
+    position: absolute;
+}
+.sec3:hover {
+    transform: rotateY(180deg); 
+}
+div , section , .front1 , .back1 , .front2 , .back2 , .front3 , .back3 {
+     width: 400px;
+     height: 300px;
+}
